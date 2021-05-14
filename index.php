@@ -4,37 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/login.css">  
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="estilos/login.css">    
+  
     <link rel="stylesheet" href="pluggins/sweetalert/sweetalert2.min.css">
     <title>Inicio de Sesion</title>
 </head>
 <body>
- <div class="container">  
-  <div class="wrapper fadeInDown">
-    <div id="formContent">
-      <!-- Tabs Titles -->
+<div class="container-fluid">
+  <div class="row no-gutter">
+    <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+    <div class="col-md-8 col-lg-6">
+      <div class="login d-flex align-items-center py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-lg-8 mx-auto">
+              <h3 class="login-heading mb-4">Welcome back!</h3>
+              <form>
+                <div class="form-label-group">
+                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                  <label for="inputEmail">Email address</label>
+                </div>
 
-      <!-- Icon -->
-      <div class="fadeIn first">
-        <img src="Imagenes/icono-11-130x130_t.png" id="icon" alt="User Icon" />
+                <div class="form-label-group">
+                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                  <label for="inputPassword">Password</label>
+                </div>
+
+                <div class="custom-control custom-checkbox mb-3">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">Remember password</label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign in</button>
+                <div class="text-center">
+                  <a class="small" href="#">Forgot password?</a></div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <!-- Login Form -->
-      <form id="formLogin" action="" method="POST">
-        <input type="text" id="login" class="fadeIn second" name="login" placeholder="login"  >
-        <input type="password" id="password" class="fadeIn third" name="login" placeholder="password"  >
-        <input type="submit" class="fadeIn fourth" value="Log In">
-      </form>
-
-      <!-- Remind Passowrd
-      <div id="formFooter">
-        <a class="underlineHover" href="#">Forgot Password?</a>
-      </div> -->
-
     </div>
   </div>
-</div> 
+</div>
+
+
 
 
 <!-- Referenciamos los js-->
